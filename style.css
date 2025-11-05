@@ -70,3 +70,106 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+/* 🎓 Estilo para a seção do Currículo */
+.curriculo {
+  background: #f4f7fb;
+  padding: 60px 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 60px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título principal da seção */
+.curriculo h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1d3557;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.curriculo h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #457b9d;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Blocos individuais (formação, habilidades, etc.) */
+.curriculo .bloco {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 5px solid #457b9d;
+}
+
+.curriculo .bloco:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Título de cada bloco */
+.curriculo .bloco h3 {
+  color: #1d3557;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* Lista dentro dos blocos */
+.curriculo .bloco ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.curriculo .bloco ul li {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.curriculo .bloco ul li::before {
+  content: "•";
+  color: #457b9d;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* 📎 Link de download */
+.curriculo .bloco a {
+  color: #1d3557;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.curriculo .bloco a:hover {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 600px) {
+  .curriculo {
+    padding: 40px 15px;
+  }
+
+  .curriculo h2 {
+    font-size: 1.8rem;
+  }
+
+  .curriculo .bloco {
+    padding: 20px;
+  }
+}
