@@ -184,3 +184,21 @@ header img {
   height: 200px;
   object-fit: cover; /* Corta para caber no círculo */
 }
+
+  /* 🎵 Estilo para os álbuns */
+.foto-album {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* mantém a proporção da imagem */
+  border-radius: 10px; /* cantos arredondados */
+  margin: 8px; /* espaço entre as imagens */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; /* coloca uma ao lado da outra */
+  vertical-align: middle;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.foto-album:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
